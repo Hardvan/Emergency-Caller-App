@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/b_happy"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="#26293E"
+        android:text="Happy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_mom"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="#26293E"
+        android:text="Mom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b_happy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_dad"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="#26293E"
+        android:text="Dad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b_happy"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Emergency Call"
+        android:textAlignment="center"
+        android:textColor="#361A3A"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/b_happy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <Button
+        android:id="@+id/b_police"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="#26293E"
+        android:text="Police"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b_fire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_mom"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/b_fire"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="#26293E"
+        android:text="Fire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_happy"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/b_medical"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="#26293E"
+        android:text="Medical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toEndOf="@+id/b_fire"
+        app:layout_constraintTop_toBottomOf="@+id/b_dad"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/b_all_emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="#26293E"
+        android:text="All Emergency(112)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_happy"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <EditText
+        android:id="@+id/et_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:fontFamily="@font/bebas_neue"
+        android:hint="Call Custom Number"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/b_happy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/b_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        app:layout_constraintBottom_toTopOf="@+id/b_happy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_custom"
+        app:layout_constraintVertical_bias="0.356" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
